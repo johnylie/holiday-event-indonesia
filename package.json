@@ -1,0 +1,49 @@
+{
+  "name": "holiday-event-indonesia",
+  "version": "1.0.0",
+  "description": "A simple package for retrieving holiday events in Indonesia",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "test": "jest --collect-coverage --config jestconfig.json",
+    "build": "tsc",
+    "build:types": "tsc -d --declarationDir dist/lib --declarationMap --emitDeclarationOnly",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "lint:fix": "npx tslint src/**/*.ts --fix",
+    "prepare": "npm run build",
+    "go": "npx ts-node src/index.ts",
+    "jest": "jest",
+    "clean": "rimraf coverage dist",
+    "prepublishOnly": "npm run clean && npm run build && npm run test"
+  },
+  "keywords": [
+    "holiday",
+    "API",
+    "Indonesia",
+    "typescript",
+    "javascript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnylie/holiday-event-indonesia.git"
+  },
+  "author": "Johny Lie",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnylie/holiday-event-indonesia/issues"
+  },
+  "homepage": "https://github.com/johnylie/holiday-event-indonesia#readme",
+  "funding": "https://github.com/sponsors/johnylie",
+  "dependencies": {
+    "axios": "^1.7.7"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.13",
+    "@types/node": "^22.7.4",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.2"
+  }
+}
