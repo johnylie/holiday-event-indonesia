@@ -16,7 +16,7 @@
     "go": "npx ts-node src/index.ts",
     "jest": "jest",
     "clean": "rimraf coverage dist",
-    "prepublishOnly": "npm run clean && npm run build && npm run test"
+    "prepublishOnly": "npm run build && npm run build:types && npm run test"
   },
   "keywords": [
     "holiday",
