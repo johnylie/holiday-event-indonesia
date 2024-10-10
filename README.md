@@ -65,16 +65,11 @@ A Promise that resolves to a HolidayResponse object containing an array of holid
 
 ```json
 [
-    {
-      "date": "2024-10-01",
-      "name": "Hari Raya Idul Fitri",
-      "description": "Celebration of Eid al-Fitr."
-    },
-    {
-      "date": "2024-10-10",
-      "name": "Hari Pahlawan",
-      "description": "Heroes Day."
-    }
+  {
+    "is_cuti": false,
+    "keterangan": "Tahun Baru 2022",
+    "tanggal": "2022-01-1"
+  }
 ]
 ```
 
