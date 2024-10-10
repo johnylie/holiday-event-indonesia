@@ -64,8 +64,7 @@ A Promise that resolves to a HolidayResponse object containing an array of holid
 ## Example Response
 
 ```json
-{
-  "holidays": [
+[
     {
       "date": "2024-10-01",
       "name": "Hari Raya Idul Fitri",
@@ -76,8 +75,7 @@ A Promise that resolves to a HolidayResponse object containing an array of holid
       "name": "Hari Pahlawan",
       "description": "Heroes Day."
     }
-  ]
-}
+]
 ```
 
 ## Customization Examples
